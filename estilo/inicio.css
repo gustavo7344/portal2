@@ -1,0 +1,220 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background: rgba(34, 34, 34, 0.856);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.ops{
+    display: none;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 20px;
+    list-style: none;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.menu li a:hover{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* topo */
+
+/* corpo */
+.inicio{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*width: auto;*/
+    margin: auto;
+    margin-top: 20px;
+   /* box-shadow: 5px 5px 10px black;*/
+    display: flex;
+    text-align: center;
+}
+.inicio img{
+    max-width: 100%;
+    /*max-width: 660px;*/
+}
+.inicio h1{
+    margin-top: 50px;
+    font-size: 30pt;
+}
+.inicio p{
+    font-size: 15pt;
+}
+.inicio a{
+    text-decoration: none;
+    color: white;
+    background: #3b5998;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15pt;
+}
+/* opçoes */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex img{
+    width: 75px;
+}
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+}
+.flex a{
+    text-decoration: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    color: #fff;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+    border-radius: 10px;
+}
+.flex a:hover{
+    background-position: right;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.gus{
+    display: flex;
+    background: rgba(8, 13, 73, 0.082);
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0;
+}
+.gus a{
+    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    transition: .5s;
+}
+.gus a:hover{
+    background: rgba(0, 0, 0, 0.527);
+    padding: 15px;
+    color: white;
+}
+.texto{
+    padding-top: 150px;
+    font-size: 15pt;
+}
+
+.dj{
+    
+        display: flex;
+        background: rgba(0, 0, 0, 0.295);
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0;
+}
+.djs{
+    padding-top: 150px;
+    font-size: 15pt;
+}
+.djs a{
+    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    transition: .5s;
+}
+.djs a:hover{
+    background: rgba(0, 0, 0, 0.527);
+    padding: 15px;
+    color: white;
+}
+.fer{
+    background: white;
+    padding: 20px;
+}
+.fer > div{
+    color: white;
+    background: #ff0000;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.fer a{
+    background: white;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+.fer a:hover{
+    padding: 15px;
+    background: black;
+    color: white;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+/* para telas menores*/
+@media(max-width: 700px){
+    .inicio{
+        flex-wrap: wrap;
+    }
+    .djs{
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .menu{
+        display: none;
+    }
+    .ops{
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        background: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+}
